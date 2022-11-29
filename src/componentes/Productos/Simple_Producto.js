@@ -12,12 +12,13 @@ export const Producto=(props)=>{
             <div className="producto_footer">
                 <h1>{props.product.product_name}</h1>
                 <p>{props.product.category}</p>
-                <p className="price">{props.product.price}</p>
+                <p className="price">USD {props.product.price}</p>
+                <p>{props.product.description}</p>
             </div>
             <div className="button">
-                <button className="btn">
-                    añadir al carrito
-                </button>               
+                <span className="btn">
+                    Añadir al Carrito
+                </span>               
             </div>
         </div>
 

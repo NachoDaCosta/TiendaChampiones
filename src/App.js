@@ -1,9 +1,10 @@
 import './App.css';
-import { Header } from './componentes/Header/Header';
+import {  Navbar } from './componentes/Header/Header';
 import { Productos } from './componentes/Productos/Productos';
 import 'boxicons';
 import React, {useEffect, useState} from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import { Home } from './componentes/Home/Home';
 
 function App() {
  const [availableProducts, setAvailableProducts] = useState([])
@@ -22,9 +23,9 @@ const getproduct = () => {
 
   return (
     <BrowserRouter>
-     <Header/>
+     <Navbar/>
     <Routes>
-      <Route path={"/"} />
+      <Route path={"/"}  element={<Home/>}/>
       <Route path={"/products"} element={<Productos Product={availableProducts}/>} />
     </Routes>
     <div className="App">

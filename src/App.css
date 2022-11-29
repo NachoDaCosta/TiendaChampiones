@@ -1,34 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 body{
-  height: 100vh;
-  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 .App{
-  background-color:rgb(203, 203, 174);
+  background-color:rgb(93, 137, 112);
   font-family: 'DM Sans', sans-serif;
   min-height: 100vh;
   max-width: 100vw;
-  width: 100%;
+
   margin: 0 auto;
   box-sizing: 0 2px 6px #08a05ca4;
   padding: 0 15px;
-  box-sizing: border-box;
 }
 /*----------Header------------------*/
 
-header{
-  width: 97%;
+nav{
+  background-color: #08a05c50;
+  width: 100vw;
   min-height: 100px;
-  max-width:1530px;
   overflow: hidden;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  position: fixed;
-  box-sizing: border-box;
-  background-color: white;
-  box-shadow: 0 5px 10px #08a05c50;
 }
 
 a{
@@ -50,33 +46,33 @@ li{
   width: 100px;
 }
 
-header ul{
+nav ul{
   display: flex;
   padding: 0;
   margin: 0;
 }
 
-header ul li{     /*Los items de la lista del header*/
+nav ul li{     /*Los items de la lista del header*/
   padding: 0 1rem;
 }
 
-header ul li a{  /*Los enlaces dentro del header*/
+nav ul li a{  /*Los enlaces dentro del header*/
   font-weight: bold;
 }
 
-header .cart{
+nav .cart{
   position: relative;
   cursor: pointer;
-}header .cart box-icon{
+}nav .cart box-icon{
   width: 45px;
   height: 45px;
 }
-header .cart span{
+nav .cart span{
   width: 30px;
   height: 30px;
   position: absolute;
   top: -1rem;
-  right: -1.5rem;
+  right: 12.5rem;
   width: -2.5rem;
   height: 1.5rem;
   border: 3px solid red;
@@ -91,7 +87,7 @@ header .cart span{
   background-color: red;
 }
 
-header a {
+nav a {
   font-size: 20px;
 }
 
@@ -100,7 +96,7 @@ header a {
   display: grid ;
   align-items: center;
   justify-content: center;
-  color: #08a05c50;
+
 }
 
 .mar{
@@ -113,12 +109,14 @@ header a {
 }
 
 .productos{
+ 
   padding: 5rem 2rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem,1fr));
   gap: 3rem 1rem;
   box-sizing: border-box;
+  background-color: rgba(106, 144, 112, 0.7);
 }
 
 .producto{
@@ -128,6 +126,8 @@ header a {
   box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, .2);
   border: 6px solid transparent;
   border-radius:5px;
+  width: 300px;
+ 
 }
 
 .producto:hover{
@@ -137,7 +137,7 @@ header a {
 .producto_footer h1{
   font-weight: 600;
   font-size: 1.5rem;
-  color: #08a05c50;
+  color:rgb(217, 255, 255);
 }
 
 .producto_footer p {
@@ -155,3 +155,66 @@ header a {
 .producto .button{
   width: 100%;
 }
+
+.menu{
+  margin-left: 70px;
+
+}
+.welcome-home{
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+}
+
+.login{
+  width: 100vw;
+  padding: ;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #08a05c50;
+}
+
+.datos{
+  display: grid;
+  grid-template-areas: 
+  "correo contra "
+  "enviar enviar ";
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.correo{
+  display: grid;
+  grid-area: correo;
+}
+.contra {
+  display: grid;
+  grid-area: contra;
+}
+.enviar {
+  display: grid;
+  justify-content: center;
+  grid-area: enviar;
+}
+
+.btn{
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(44, 119, 51);
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.button{
+    display: grid;
+    align-content: center;
+    width: 135px;
+    color: white;
+  }
+
+  .btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }

@@ -6,7 +6,7 @@ export const Productos=(props)=>{
         <>{
             props.Product.map((item,key)=>{
                 return(
-                    <Producto product={item} key={key}/>
+                    <Producto product={item} key={key} />
                 )
             })
 

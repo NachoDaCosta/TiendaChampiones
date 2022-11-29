@@ -1,14 +1,14 @@
 import React from "react";
 import Nike from "D:/senpai/tienda/src/imagenes/nike.png"
 
-export const Header=()=>{
+export const Navbar=()=>{
     return(
-        <header >
+        <nav>
             <div className="menu">
-                <box-icon name="menu"></box-icon>
+                <box-icon name="menu" ></box-icon>
             </div>
 
-            <a href="a">
+            <a href="/">
                 <div className="logo">
                     <img src={Nike} alt="" className="zapaheader"/>
                 </div>
@@ -28,7 +28,7 @@ export const Header=()=>{
                 <span className="item__total">0</span>
             </div>
 
-        </header>
+        </nav>
     )
 }
 //fui a tirar la basura feo o sergio
