@@ -28,10 +28,6 @@ const getproduct = () => {
       <Route path={"/"}  element={<Home/>}/>
       <Route path={"/products"} element={<Productos Product={availableProducts}/>} />
     </Routes>
-    <div className="App">
-     
-      
-    </div>
     </BrowserRouter>
   );
 }

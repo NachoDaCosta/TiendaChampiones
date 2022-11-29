@@ -3,6 +3,12 @@ body{
   max-height: 100vh;
   max-width: 100vw;
 }
+
+#root{
+  height: 100vh;
+  width: 100vw;
+}
+
 .App{
   background-color:rgb(93, 137, 112);
   font-family: 'DM Sans', sans-serif;
@@ -18,6 +24,7 @@ body{
 nav{
   background-color: #08a05c50;
   width: 100vw;
+  height: 20vh;
   min-height: 100px;
   overflow: hidden;
   display: grid;
@@ -161,14 +168,16 @@ nav a {
 
 }
 .welcome-home{
+  display: grid;
+  height: 80vh;
   width: 100vw;
   display: grid;
+  grid-auto-rows: 30% 70%;
   justify-items: center;
 }
 
 .login{
   width: 100vw;
-  padding: ;
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: #08a05c50;
@@ -180,6 +189,7 @@ nav a {
   "correo contra "
   "enviar enviar ";
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
   gap: 10px;
 }
 
@@ -217,4 +227,30 @@ nav a {
   .btn:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+  }
+
+  .input_large{
+    width: 300px;
+  }
+
+  .centrar{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .space{
+    display: grid ;
+    margin-bottom: 10px;
+  }
+
+  .register-text{
+    font-size: 30px;
+    color: rgb(44, 102, 73);
+  }
+
+  form label{
+    font-weight: bold;
+    font-size:20px ;
+    color: rgb(44, 102, 73);
   }
