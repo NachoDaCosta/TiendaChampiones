@@ -4,12 +4,10 @@ import Nike from "D:/senpai/tienda/src/imagenes/nike.png"
 export const Navbar=()=>{
     return(
         <nav>
-            <div className="menu">
-                <box-icon name="menu" ></box-icon>
-            </div>
+            
 
             <a href="/">
-                <div className="logo">
+                <div className="logo menu">
                     <img src={Nike} alt="" className="zapaheader"/>
                 </div>
             </a>

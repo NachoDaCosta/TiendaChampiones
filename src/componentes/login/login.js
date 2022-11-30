@@ -20,7 +20,7 @@ export const Login=()=>{
                         
                     </div>
                     <div className="enviar">
-                        <input type="submit" value="Submit"/>
+                        <input type="submit" value="Submit" />
                     </div>
                 </form>
             </div>

@@ -33,3 +33,7 @@ const getproduct = () => {
 }
 
 export default App;
+/*login por formulario
+carrito
+producto individual
+*/
