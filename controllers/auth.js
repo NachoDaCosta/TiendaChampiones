@@ -24,7 +24,7 @@ router.post('/register',async (req,res)=>{
 router.post('/login',async(req,res)=>{
     const User=db.User
     const chackedUser=await User.findOne({where:{email:req.body.email}});
-    console.log(chackedUser.toJSON())
+    console.log(chackedUser)
     if (!chackedUser){
         return res.status(400).send({error:"Usuario no encontrado"})
     }

@@ -1,15 +1,14 @@
 import React from "react";
-import { Login } from "../login/login";
+import {  Navbar } from '../Header/Navbar';
 
-//Este es el Home 
-export const Home=()=>{
+
+export const Home=(props)=>{
     return (
         <>
+        
         <div className="welcome-home">
+            <Navbar logueo={props.logueo}/>
             <h1>Bienvenidos a la tienda</h1>
-            <Login/>
-            
-
         </div>
             
         </>

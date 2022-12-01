@@ -29,7 +29,7 @@ nav{
   overflow: hidden;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns:  1fr 3fr 1fr;
+  grid-template-columns:  1fr 3fr 1fr 1fr;
   justify-content: center;
   align-items: center;
 }
@@ -79,7 +79,7 @@ nav .cart span{
   height: 30px;
   position: absolute;
   top: -1rem;
-  right: 12.5rem;
+  right: 9.5rem;
   width: -2.5rem;
   height: 1.5rem;
   border: 3px solid red;
@@ -176,11 +176,15 @@ nav a {
   justify-items: center;
 }
 
+
 .login{
+  margin-top: 20%;
   width: 100vw;
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-template-rows: 1fr 1fr;
-  background-color: #08a05c50;
+  background-color: #13674150;
 }
 
 .datos{
@@ -253,4 +257,23 @@ nav a {
     font-weight: bold;
     font-size:20px ;
     color: rgb(44, 102, 73);
+  }
+
+
+  .btn-logout{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 10px;
+    width: 150px;
+    border-radius:25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .btn-logout:hover{
+    cursor: pointer;
+    background-color: rgb(195, 49, 49);
   }
